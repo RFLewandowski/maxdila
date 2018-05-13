@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui" xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+</h:head>
+<h:body>
+    <div class="ui-g-12 ui-g-nopad info">
+        <div class="ui-g-12">
+            <p:layout style="min-width:400px;min-height:200px;">
+                <p:layoutUnit position="center">
+                    tu będzie info
+                </p:layoutUnit>
+            </p:layout>
+        </div>
+        <div class="ui-g-12 ui-g-nopad">
+            <div class="ui-g">
+                <div class="ui-g-12 ui-md-4 market">market</div>
+                <div class="ui-g-12 ui-md-4 actions" style="width: 15%; margin: 0 auto; text-align:left; margin-bottom: 10px;">
+                    <div class="action_row">
+                        <div class="action">action
+                            <br/>
+                            <p:commandButton value="Ajax Submit" id="ajax2" actionListener="#{buttonView.buttonAction}" styleClass="ui-priority-primary" />
+                            <p:commandButton value="Ajax Submit" id="ajax3" actionListener="#{buttonView.buttonAction}" styleClass="ui-priority-primary" />
+                            <p:commandButton value="Ajax Submit" id="ajax5" actionListener="#{buttonView.buttonAction}" styleClass="ui-priority-primary" />
+                            <p:commandButton value="Ajax Submit" id="ajax6" actionListener="#{buttonView.buttonAction}" styleClass="ui-priority-primary" />
+                            <p:commandButton value="Ajax Submit" id="ajax7" actionListener="#{buttonView.buttonAction}" styleClass="ui-priority-primary" />
+                            <p:commandButton value="Ajax Submit" id="ajax8" actionListener="#{buttonView.buttonAction}" styleClass="ui-priority-primary" />
+                        </div>
+                    </div>
+                    <div class="tomorrow_row">
+                        <div class="tomorrow">
+                            <br/>
+                            tomorrow
+                            <br/>
+                            <p:commandButton value="Ajax Submit" id="ajax0" actionListener="#{buttonView.buttonAction}" styleClass="ui-priority-primary" />
+                            <p:commandButton value="Ajax Submit" id="ajax1" actionListener="#{buttonView.buttonAction}" styleClass="ui-priority-primary" />
+                        </div>
+                    </div>
+                    <div class="game_options_row">
+                        <div class="game_options">
+                            <br/>
+                            game_options</div>
+                    </div>
+                </div>
+                <div class="ui-g-12 ui-md-4 player">
+                    <div class="pockets_row">
+                        <div class="pockets">pockets</div>
+                    </div>
+                    <div class="player_status_row">
+
+                        <div class="player_status">
+                            <p:panelGrid columns="2"  style="width:100%;margin:10px 0px">
+                                <f:facet name="header">
+                                    <p:graphicImage name="demo/images/misc/kobe.png" />
+                                </f:facet>
+                                <h:outputText value="Ksywa:" />
+                                <h:outputText value="#{dealer.name}" />
+                                <h:outputText value="Zdrowie:" />
+                                <p:progressBar value="#{dealer.health}"></p:progressBar>
+                                <h:outputText value="Kasa:" />
+                                <h:outputText value="#{dealer.cash}" />
+                            </p:panelGrid>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</h:body>
+</html>
+
+
+
